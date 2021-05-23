@@ -1,3 +1,6 @@
+---
+---
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -24,3 +27,4 @@ $base0f: #b18a3d !default;
 html {
   font-size: 16px; // global font size
 }
+
