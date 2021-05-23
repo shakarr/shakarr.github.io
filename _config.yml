@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 locale                   : "es-ES"
 title                    : "shakar | Blog de ciberseguridad"
 title_separator          : "-"
-name                     : "r4kso"
+name                     : "shakarr"
 description              : "Blog personal sobre ciberseguridad y otros"
 url                      : "https://shakarr.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
