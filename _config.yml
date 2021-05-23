@@ -101,9 +101,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "shakar"
+  name             : "shakarr"
   avatar           : "/assets/images/profilepic.jpg"
-  bio              : "IT degree student / Interested in cybersecurity / Pentester wannabe"
+  bio              : "Apasionado de la informática / Programador / Aspirante a experto en ciberseguridad"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
