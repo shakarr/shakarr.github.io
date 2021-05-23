@@ -75,8 +75,6 @@ google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
-show_downloads: true
-google_analytics: "G-NNGB34GKFS"
 
 # Social Sharing
 twitter:
@@ -97,7 +95,7 @@ social:
 analytics:
   provider               : "google" # (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : 
+    tracking_id          : "UA-194209940-1"
     anonymize_ip         : false
 
 
