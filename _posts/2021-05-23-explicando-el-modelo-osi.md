@@ -2,7 +2,7 @@
 layout: single
 title:  Explicando el modelo OSI y TCP/IP
 excerpt: "Entender como funciona la red es uno de los principio basicos para todo aquel que este
-iniciando en el mundo d ela informática, y mas aún, en el mundo de la seguridad informática. En este
+iniciando en el mundo de la informática, y mas aún, en el mundo de la seguridad informática. En este
 post aprenderas los conocimiento básicos sobre el modelo OSI y el TCP/IP"
 date: 2021-05-23
 classes: wide
