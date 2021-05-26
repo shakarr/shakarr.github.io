@@ -9,23 +9,29 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>            Artículos por categoría - shakar      Blog de ciberseguridad      </title>
-<meta name="description" content="Blog personal sobre ciberseguridad y otros">
+<!-- begin _includes/seo.html --><title>            Creando 1000+ hostposts - shakar      Blog de ciberseguridad      </title>
+<meta name="description" content="En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="shakar | Blog de ciberseguridad">
-<meta property="og:title" content="Artículos por categoría">
-<meta property="og:url" content="http://localhost:4000/categories/">
+<meta property="og:title" content="Creando 1000+ hostposts">
+<meta property="og:url" content="http://localhost:4000/creando-1000-hostpost/">
+
+
+  <meta property="og:description" content="En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/creando-1000-hostpost/banner.webp">
 
 
 
 
 
-
-
+  <meta property="article:published_time" content="2021-05-26T00:00:00+02:00">
 
 
 
@@ -36,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/categories/">
+<link rel="canonical" href="http://localhost:4000/creando-1000-hostpost/">
 
 
 
@@ -100,7 +106,7 @@
 
   </head>
 
-  <body class="layout--categories">
+  <body class="layout--single wide">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -162,7 +168,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Artículos por categoría</li>
+        <li class="current">Creando 1000+ hostposts</li>
       
     
   </ol>
@@ -284,178 +290,162 @@
   </div>
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creando 1000+ hostposts">
+    <meta itemprop="description" content="En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso">
+    <meta itemprop="datePublished" content="May 26, 2021">
     
-      <h1 id="page-title" class="page__title">Artículos por categoría</h1>
-    
-    
 
-
-
-
-
-<ul class="taxonomy__index">
-  
-    
+    <div class="page__inner-wrap">
       
-        <li>
-          <a href="#explicaciones">
-            <strong>Explicaciones</strong> <span class="taxonomy__count">3</span>
-          </a>
-        </li>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-</ul>
-
-
-  
-    
-      <section id="explicaciones" class="taxonomy__section">
-        <h2 class="archive__subtitle">Explicaciones</h2>
-        <div class="entries-list">
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Creando 1000+ hostposts
+</h1>
           
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
+        </header>
       
-        <a href="/creando-1000-hostpost/" rel="permalink">Creando 1000+ hostposts
-</a>
+
+      <section class="page__content" itemprop="text">
         
-      
-    </h2>
-
-    <p class="page__meta">
-      
-        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2021-05-26T00:00:00+02:00">May 26, 2021 </time>&emsp;
-      
-      
-    </p>
-
-    <p class="archive__item-excerpt" itemprop="description"><img src="/assets/images/creando-1000-hostpost/banner.webp" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso
-</p>
-    <i class="fas fa-tags"></i>
-    
-      <a href="/tags/#Tutoriales" class="page__meta btn" rel="tag">Tutoriales</a>
-    
-      <a href="/tags/#Redes" class="page__meta btn" rel="tag">Redes</a>
-    
-      <a href="/tags/#Ataques" class="page__meta btn" rel="tag">Ataques</a>
-    
-      <a href="/tags/#mdk3" class="page__meta btn" rel="tag">mdk3</a>
-    
-      <a href="/tags/#hacking" class="page__meta btn" rel="tag">hacking</a>
-    
-  </article>
-</div>
-
+        <p class="page__meta">
           
-            
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2021-05-26T00:00:00+02:00">May 26, 2021 </time>&emsp;
+          
+          
+        </p>
+        <p align="center">
+<img src="/assets/images/creando-1000-hostpost/mdk-feature.jpg" width="50%" />
+</p>
+
+<p>En este post vamos a tratar uno de los muchos metodos de como crear un hostpost, para esta prueba utilizaremos <strong>mdk3</strong> y lo que haremos será un ataque <strong>BEACOON FLOOD</strong> donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre <strong>ESSID</strong> que la red a la que queramos dañar pero con distinta <strong>MAC</strong> con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.</p>
+
+<p>Una cosa que podemos hacer con esta herramienta es crear puntos de acceso con nombres personalizados, en nuestro caso vamos a crear alrededor de 1000 puntos de acceso con un fichero el cuál generará un ESSID ‘Wifi_Gratis’ seguido de un número al final que se irá incrementando, bien manos a la obra.</p>
+
+<p>Primero vamos a crear un sencillo script que haga lo de los puntos de acceso, aqui te dejo el código:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+contador=0
+
+until [ "$contador" -gt "1000" ]; do
+    echo "Wifi_Gratis$contador" &gt;&gt; redes.txt
+    let contador+=1
+done
+</code></pre></div></div>
+
+<p>Sencillo cierto, solo estamos haciendo un buclee que cree los 1000 puntos de acceso, les asigna el número, lo incrementa y los va guardando en un fichero llamado <strong>redes.txt</strong> que será el que usaremos con mdk3.</p>
+
+<blockquote>
+  <p>NOTA: Acuerdate de cuardarlo con extension .sh</p>
+</blockquote>
+
+<p>Si quereis podeis hacer un cat depués de haberlo ejecutado el .sh <code class="language-plaintext highlighter-rouge">./nombrefichero.sh</code>(por si no te acuerdas) y os debería de salir algo como esto</p>
+
+<p align="center">
+<img src="/assets/images/creando-1000-hostpost/image1.png" width="50%" />
+</p>
+
+<p>Bien ahora solo quedaría realizar el ataque, para ello os recuerdo que tendreis que estar en modo monitos con vuestra tarjeta de red, solo tendremos que usar el siguiente comando <code class="language-plaintext highlighter-rouge">sudo mdk3 wlan0mon b -f redes.txt -a -s 1000</code></p>
+
+<blockquote>
+  <p>NOTA: donde pone wlan0mon será vuestra tarjeta de red en modo monitor</p>
+</blockquote>
+
+<p>Como resultado, visto desde el movil tenemos esto</p>
+
+<p align="center">
+<img src="/assets/images/creando-1000-hostpost/imag2.png" width="50%" />
+</p>
 
 
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/tunel-ssh/" rel="permalink">Conectarse a otro pc por tunelación SSH
-</a>
         
-      
-    </h2>
-
-    <p class="page__meta">
-      
-        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2021-05-25T00:00:00+02:00">May 25, 2021 </time>&emsp;
-      
-      
-    </p>
-
-    <p class="archive__item-excerpt" itemprop="description"><img src="/assets/images/tunel-ssh/ssh-tunneling.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">En este post te explico brevemente como conectarte a otra maquina dentro de tu red vía túnel SSH y algunas cosas que puedes hacer en el ordenador objetivo
-</p>
-    <i class="fas fa-tags"></i>
-    
-      <a href="/tags/#Tutoriales" class="page__meta btn" rel="tag">Tutoriales</a>
-    
-      <a href="/tags/#Túneles" class="page__meta btn" rel="tag">Túneles</a>
-    
-      <a href="/tags/#SSH" class="page__meta btn" rel="tag">SSH</a>
-    
-  </article>
-</div>
-
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/explicando-el-modelo-osi/" rel="permalink">Explicando el modelo OSI y TCP/IP
-</a>
-        
-      
-    </h2>
-
-    <p class="page__meta">
-      
-        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2021-05-23T00:00:00+02:00">May 23, 2021 </time>&emsp;
-      
-      
-    </p>
-
-    <p class="archive__item-excerpt" itemprop="description"><img src="/assets/images/explicacion-del-modelo-osi/banner-osi.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">Entender como funciona la red es uno de los principio basicos para todo aquel que este iniciando en el mundo de la informática, y mas aún, en el mundo de la seguridad informática. En este post aprenderas los conocimiento básicos sobre el modelo OSI y el TCP/IP
-</p>
-    <i class="fas fa-tags"></i>
-    
-      <a href="/tags/#Tutoriales" class="page__meta btn" rel="tag">Tutoriales</a>
-    
-      <a href="/tags/#Red" class="page__meta btn" rel="tag">Red</a>
-    
-      <a href="/tags/#OSI" class="page__meta btn" rel="tag">OSI</a>
-    
-      <a href="/tags/#Capa" class="page__meta btn" rel="tag">Capa</a>
-    
-      <a href="/tags/#Internet" class="page__meta btn" rel="tag">Internet</a>
-    
-  </article>
-</div>
-
-          
-        </div>
-        <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
       </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
     
-  
-
-  
+      
+      
+      <a href="/tags/#ataques" class="page__taxonomy-item" rel="tag">Ataques</a><span class="sep">, </span>
     
-  
-
-  
+      
+      
+      <a href="/tags/#hacking" class="page__taxonomy-item" rel="tag">hacking</a><span class="sep">, </span>
     
+      
+      
+      <a href="/tags/#mdk3" class="page__taxonomy-item" rel="tag">mdk3</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#redes" class="page__taxonomy-item" rel="tag">Redes</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tutoriales" class="page__taxonomy-item" rel="tag">Tutoriales</a>
+    
+    </span>
+  </p>
+
+
+
+
   
 
 
-  </div>
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#explicaciones" class="page__taxonomy-item" rel="tag">Explicaciones</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Fecha:</strong> <time datetime="2021-05-26T00:00:00+02:00">May 26, 2021</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/tunel-ssh/" class="pagination--pager" title="Conectarse a otro pc por tunelación SSH
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
 </div>
+
     </div>
 
     
