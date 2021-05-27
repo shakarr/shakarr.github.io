@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  Creando 1000+ hostposts
+title:  Creando 1000+ hotsposts
 excerpt: "En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso"
 date: 2021-05-26
 classes: wide
@@ -21,7 +21,7 @@ tags:
 <img src="/assets/images/creando-1000-hostpost/mdk-feature.jpg" width="50%">
 </p>
 
-En este post vamos a tratar uno de los muchos metodos de como crear un hostpost, para esta prueba utilizaremos **mdk3** y lo que haremos será un ataque **BEACOON FLOOD** donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre **ESSID** que la red a la que queramos dañar pero con distinta **MAC** con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.
+En este post vamos a tratar uno de los muchos metodos de como crear un hotspost, para esta prueba utilizaremos **mdk3** y lo que haremos será un ataque **BEACOON FLOOD** donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre **ESSID** que la red a la que queramos dañar pero con distinta **MAC** con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.
 
 Una cosa que podemos hacer con esta herramienta es crear puntos de acceso con nombres personalizados, en nuestro caso vamos a crear alrededor de 1000 puntos de acceso con un fichero el cuál generará un ESSID 'Wifi_Gratis' seguido de un número al final que se irá incrementando, bien manos a la obra.
 
