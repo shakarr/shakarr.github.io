@@ -40,7 +40,7 @@ done
 
 Sencillo cierto, solo estamos haciendo un buclee que cree los 1000 puntos de acceso, les asigna el número, lo incrementa y los va guardando en un fichero llamado **redes.txt** que será el que usaremos con mdk3.
 
-> NOTA: Acuerdate de cuardarlo con extension .sh
+> NOTA: Acuerdate de guardarlo con extension .sh
 
 Si quereis podeis hacer un cat depués de haberlo ejecutado el .sh `./nombrefichero.sh`(por si no te acuerdas) y os debería de salir algo como esto
 
