@@ -1,46 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T18:25:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">shakar | Blog de ciberseguridad</title><subtitle>Blog personal sobre ciberseguridad y otros</subtitle><author><name>shakarr</name></author><entry><title type="html">Creando 1000+ hotsposts</title><link href="http://localhost:4000/creando-1000-hostpost/" rel="alternate" type="text/html" title="Creando 1000+ hotsposts" /><published>2021-05-26T00:00:00+01:00</published><updated>2021-05-26T00:00:00+01:00</updated><id>http://localhost:4000/creando-1000-hostpost</id><content type="html" xml:base="http://localhost:4000/creando-1000-hostpost/">&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/creando-1000-hostpost/mdk-feature.jpg&quot; width=&quot;50%&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;En este post vamos a tratar uno de los muchos metodos de como crear un hotspost, para esta prueba utilizaremos &lt;strong&gt;mdk3&lt;/strong&gt; y lo que haremos será un ataque &lt;strong&gt;BEACOON FLOOD&lt;/strong&gt; donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre &lt;strong&gt;ESSID&lt;/strong&gt; que la red a la que queramos dañar pero con distinta &lt;strong&gt;MAC&lt;/strong&gt; con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.&lt;/p&gt;
-
-&lt;p&gt;Una cosa que podemos hacer con esta herramienta es crear puntos de acceso con nombres personalizados, en nuestro caso vamos a crear alrededor de 1000 puntos de acceso con un fichero el cuál generará un ESSID ‘Wifi_Gratis’ seguido de un número al final que se irá incrementando, bien manos a la obra.&lt;/p&gt;
-
-&lt;p&gt;Primero vamos a crear un sencillo script que haga lo de los puntos de acceso, aqui te dejo el código:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/bash
-
-contador=0
-
-until [ &quot;$contador&quot; -gt &quot;1000&quot; ]; do
-    echo &quot;Wifi_Gratis$contador&quot; &amp;gt;&amp;gt; redes.txt
-    let contador+=1
-done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Sencillo cierto, solo estamos haciendo un buclee que cree los 1000 puntos de acceso, les asigna el número, lo incrementa y los va guardando en un fichero llamado &lt;strong&gt;redes.txt&lt;/strong&gt; que será el que usaremos con mdk3.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTA: Acuerdate de guardarlo con extension .sh&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Si quereis podeis hacer un cat depués de haberlo ejecutado el .sh &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./nombrefichero.sh&lt;/code&gt;(por si no te acuerdas) y os debería de salir algo como esto&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/creando-1000-hostpost/image1.png&quot; width=&quot;50%&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Bien ahora solo quedaría realizar el ataque, para ello os recuerdo que tendreis que estar en modo monitos con vuestra tarjeta de red, solo tendremos que usar el siguiente comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mdk3 wlan0mon b -f redes.txt -a -s 1000&lt;/code&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTA: donde pone wlan0mon será vuestra tarjeta de red en modo monitor&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Como resultado, visto desde el movil tenemos esto&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/creando-1000-hostpost/imag2.png&quot; width=&quot;50%&quot; /&gt;
-&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Explicaciones" /><category term="Tutoriales" /><category term="Redes" /><category term="Ataques" /><category term="mdk3" /><category term="hacking" /><summary type="html">En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso</summary></entry><entry><title type="html">Como esconder un backdoor en un documento</title><link href="http://localhost:4000/esconder-backdoor-en-documento/" rel="alternate" type="text/html" title="Como esconder un backdoor en un documento" /><published>2021-05-26T00:00:00+01:00</published><updated>2021-05-26T00:00:00+01:00</updated><id>http://localhost:4000/esconder-backdoor-en-documento</id><content type="html" xml:base="http://localhost:4000/esconder-backdoor-en-documento/">&lt;p align=&quot;center&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T18:39:07+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">shakar | Blog de ciberseguridad</title><subtitle>Blog personal sobre ciberseguridad y otros</subtitle><author><name>shakarr</name></author><entry><title type="html">Como esconder un backdoor en un documento</title><link href="http://localhost:4000/esconder-backdoor-en-documento/" rel="alternate" type="text/html" title="Como esconder un backdoor en un documento" /><published>2021-08-20T00:00:00+01:00</published><updated>2021-08-20T00:00:00+01:00</updated><id>http://localhost:4000/esconder-backdoor-en-documento</id><content type="html" xml:base="http://localhost:4000/esconder-backdoor-en-documento/">&lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/esconder-backdoor-en-documento/man_in_doorway_newblog.png&quot; width=&quot;50%&quot; /&gt;
 &lt;/p&gt;
 
@@ -116,7 +74,49 @@ Cuando termines es importante que lo guardes con extensión .doc, ya que esta co
 
 &lt;p&gt;&lt;strong&gt;“Buenas tardes, aqui les adjunto los informes correspondientes a las nóminas de la semana pasada”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Viendo este mensaje más el que le sale mencionado anteriormente la víctima creera que tendrá que activar dicha opción para visualizar el contenido, ya esto queda a vuestra manera el como hacerlo.&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Intrusion" /><category term="Tutoriales" /><category term="Backdoor" /><category term="Ataques" /><category term="hacking" /><summary type="html">En este post te explico un metodo de intrusion, que consiste en esconder un backdoor en un documento</summary></entry><entry><title type="html">Conectarse a otro pc por tunelación SSH</title><link href="http://localhost:4000/tunel-ssh/" rel="alternate" type="text/html" title="Conectarse a otro pc por tunelación SSH" /><published>2021-05-25T00:00:00+01:00</published><updated>2021-05-25T00:00:00+01:00</updated><id>http://localhost:4000/tunel-ssh</id><content type="html" xml:base="http://localhost:4000/tunel-ssh/">&lt;p align=&quot;center&quot;&gt;
+&lt;p&gt;Viendo este mensaje más el que le sale mencionado anteriormente la víctima creera que tendrá que activar dicha opción para visualizar el contenido, ya esto queda a vuestra manera el como hacerlo.&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Intrusion" /><category term="Tutoriales" /><category term="Backdoor" /><category term="Ataques" /><category term="hacking" /><summary type="html">En este post te explico un metodo de intrusion, que consiste en esconder un backdoor en un documento</summary></entry><entry><title type="html">Creando 1000+ hotsposts</title><link href="http://localhost:4000/creando-1000-hostpost/" rel="alternate" type="text/html" title="Creando 1000+ hotsposts" /><published>2021-05-26T00:00:00+01:00</published><updated>2021-05-26T00:00:00+01:00</updated><id>http://localhost:4000/creando-1000-hostpost</id><content type="html" xml:base="http://localhost:4000/creando-1000-hostpost/">&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/creando-1000-hostpost/mdk-feature.jpg&quot; width=&quot;50%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;En este post vamos a tratar uno de los muchos metodos de como crear un hotspost, para esta prueba utilizaremos &lt;strong&gt;mdk3&lt;/strong&gt; y lo que haremos será un ataque &lt;strong&gt;BEACOON FLOOD&lt;/strong&gt; donde lo que tendrá por objetivo es crear un montón de puntos de acceso con el mismo nombre &lt;strong&gt;ESSID&lt;/strong&gt; que la red a la que queramos dañar pero con distinta &lt;strong&gt;MAC&lt;/strong&gt; con esto conseguirmos o bien echar a los usuarios de la red o hacer que la conexión vaya un peor.&lt;/p&gt;
+
+&lt;p&gt;Una cosa que podemos hacer con esta herramienta es crear puntos de acceso con nombres personalizados, en nuestro caso vamos a crear alrededor de 1000 puntos de acceso con un fichero el cuál generará un ESSID ‘Wifi_Gratis’ seguido de un número al final que se irá incrementando, bien manos a la obra.&lt;/p&gt;
+
+&lt;p&gt;Primero vamos a crear un sencillo script que haga lo de los puntos de acceso, aqui te dejo el código:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/bash
+
+contador=0
+
+until [ &quot;$contador&quot; -gt &quot;1000&quot; ]; do
+    echo &quot;Wifi_Gratis$contador&quot; &amp;gt;&amp;gt; redes.txt
+    let contador+=1
+done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Sencillo cierto, solo estamos haciendo un buclee que cree los 1000 puntos de acceso, les asigna el número, lo incrementa y los va guardando en un fichero llamado &lt;strong&gt;redes.txt&lt;/strong&gt; que será el que usaremos con mdk3.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: Acuerdate de guardarlo con extension .sh&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Si quereis podeis hacer un cat depués de haberlo ejecutado el .sh &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./nombrefichero.sh&lt;/code&gt;(por si no te acuerdas) y os debería de salir algo como esto&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/creando-1000-hostpost/image1.png&quot; width=&quot;50%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Bien ahora solo quedaría realizar el ataque, para ello os recuerdo que tendreis que estar en modo monitos con vuestra tarjeta de red, solo tendremos que usar el siguiente comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mdk3 wlan0mon b -f redes.txt -a -s 1000&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTA: donde pone wlan0mon será vuestra tarjeta de red en modo monitor&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Como resultado, visto desde el movil tenemos esto&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/creando-1000-hostpost/imag2.png&quot; width=&quot;50%&quot; /&gt;
+&lt;/p&gt;</content><author><name>shakarr</name></author><category term="Explicaciones" /><category term="Tutoriales" /><category term="Redes" /><category term="Ataques" /><category term="mdk3" /><category term="hacking" /><summary type="html">En este post te explico brevemente un ataque muy comun con mdk3 en el cual crearemos alrededor de 1000 puntos de acceso</summary></entry><entry><title type="html">Conectarse a otro pc por tunelación SSH</title><link href="http://localhost:4000/tunel-ssh/" rel="alternate" type="text/html" title="Conectarse a otro pc por tunelación SSH" /><published>2021-05-25T00:00:00+01:00</published><updated>2021-05-25T00:00:00+01:00</updated><id>http://localhost:4000/tunel-ssh</id><content type="html" xml:base="http://localhost:4000/tunel-ssh/">&lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/tunel-ssh/ssh-banner.jpeg&quot; width=&quot;50%&quot; /&gt;
 &lt;/p&gt;
 

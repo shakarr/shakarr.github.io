@@ -2,7 +2,7 @@
 layout: single
 title:  Como esconder un backdoor en un documento
 excerpt: "En este post te explico un metodo de intrusion, que consiste en esconder un backdoor en un documento"
-date: 2021-05-26
+date: 2021-08-20
 classes: wide
 header:
     teaser: /assets/images/esconder-backdoor-en-documento/banner-backdoor-intrusion.png
