@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-20T18:39:07+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">shakar | Blog de ciberseguridad</title><subtitle>Blog personal sobre ciberseguridad y otros</subtitle><author><name>shakarr</name></author><entry><title type="html">Como esconder un backdoor en un documento</title><link href="http://localhost:4000/esconder-backdoor-en-documento/" rel="alternate" type="text/html" title="Como esconder un backdoor en un documento" /><published>2021-08-20T00:00:00+01:00</published><updated>2021-08-20T00:00:00+01:00</updated><id>http://localhost:4000/esconder-backdoor-en-documento</id><content type="html" xml:base="http://localhost:4000/esconder-backdoor-en-documento/">&lt;p align=&quot;center&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-14T16:21:54+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">shakar | Blog de ciberseguridad</title><subtitle>Blog personal sobre ciberseguridad y otros</subtitle><author><name>shakarr</name></author><entry><title type="html">Beep HTB Writeup</title><link href="http://localhost:4000/beep-writeup-htb/" rel="alternate" type="text/html" title="Beep HTB Writeup" /><published>2021-12-14T00:00:00+00:00</published><updated>2021-12-14T00:00:00+00:00</updated><id>http://localhost:4000/beep-writeup-htb</id><content type="html" xml:base="http://localhost:4000/beep-writeup-htb/">&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/beep-banner.png&quot; width=&quot;50%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;1-enumeration&quot;&gt;1. Enumeration&lt;/h2&gt;
+
+&lt;p&gt;Vamos a empezar como siempre con la enumeración de puertos, vamos a usar el siguiente comando: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nmap -sC -sV -Pn -oA nmap/result 10.10.10.7&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img1.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Vamos a navegar a la url ya que vemos que el peurto 80 esta abierto, pero si navegamos a la url no saldrá algo como lo siguiente:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img2.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;a sí que le daremos que aceptamos los riesgos y seguiremos adelante. Una vez echo esto, vemos que tenemos un panel de login del cual no tenemos credenciales&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img3.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Vamos a hacer un enumerado de la web usando la herrameinta &lt;strong&gt;dirbuster&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img4.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Una vez acabado el análisis, vemos que la herramienta a encontrado un gran cantidad de direcotrios que pueden ser explotados&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img5.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;2-explotation&quot;&gt;2. Explotation&lt;/h2&gt;
+
+&lt;p&gt;Vamos a buscar con &lt;strong&gt;searchsploit&lt;/strong&gt; ifnromación acerca de elastic, para ello usaremos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;searchsploit elastix&lt;/code&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img6.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;vemos que hay una serie de vulenrabilidades bastante grandes, en este caso vamos a echarle un vistado a &lt;strong&gt;graph.php&lt;/strong&gt;, si usamos el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;searchsploit -x 37637.pl&lt;/code&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img7.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;obtenemos un sumario con todo lo relacionado con el exploit y el código.&lt;/p&gt;
+
+&lt;p&gt;El código para el &lt;strong&gt;LFI Exploit&lt;/strong&gt; seía el siguiente: &lt;strong&gt;/vtigercrm/graph.php?current_language=../../../../../../../..//etc/amportal.conf%00&amp;amp;module=Accounts&amp;amp;action&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Un atacante puede utilizar la inclusión de archivos locales (LFI) para engañar a la aplicación web para que exponga o ejecute archivos en el servidor web. Un ataque LFI puede provocar la divulgación de información, la ejecución remota de código o incluso Cross-site Scripting (XSS).&lt;/p&gt;
+
+&lt;p&gt;Vamos a probar el exploit, para ello en el navegador introduciremos la ip de la máquina seguido del exploit, de la siguiente manera &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://10.10.10.7/vtigercrm/graph.php?current_language=../../../../../../../..//etc/amportal.conf%00&amp;amp;module=Accounts&amp;amp;action&lt;/code&gt; y vemos que obtenemos una cantidad de texto casi ilegible pero vemos que hay información útil&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img8.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;si le damos e examianr código fuente obtendremos una mejro visión del documento&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img9.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Navegando un poco en el archivo, encontre la siguiente contraseña &lt;strong&gt;jEhdIekWmdjE&lt;/strong&gt;, vamos a tratar de conectarnos por ssh, ya que como vimos en el análisis con nmpa el puerto 22 esta abierto.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/beep-writeup-htb/img10.png&quot; width=&quot;100%&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;y como vemos somos root, ahora solo quedaría obtener los flags&lt;/p&gt;</content><author><name>shakarr</name></author><category term="HTB Writeup" /><category term="Tutoriales" /><category term="HTB" /><category term="Machine" /><category term="hacking" /><summary type="html">En este post te daré un writeup detallado de la máquina beep de HTB</summary></entry><entry><title type="html">Como esconder un backdoor en un documento</title><link href="http://localhost:4000/esconder-backdoor-en-documento/" rel="alternate" type="text/html" title="Como esconder un backdoor en un documento" /><published>2021-08-20T00:00:00+01:00</published><updated>2021-08-20T00:00:00+01:00</updated><id>http://localhost:4000/esconder-backdoor-en-documento</id><content type="html" xml:base="http://localhost:4000/esconder-backdoor-en-documento/">&lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/images/esconder-backdoor-en-documento/man_in_doorway_newblog.png&quot; width=&quot;50%&quot; /&gt;
 &lt;/p&gt;
 
