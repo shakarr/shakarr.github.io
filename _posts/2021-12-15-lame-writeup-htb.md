@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  Lame HTB 
+title:  Lame HTB Writeup
 excerpt: "En este post te daré un writeup detallado de la máquina lame de HTB"
 date: 2021-12-15
 classes: wide
@@ -91,5 +91,5 @@ y como vemos ya tenemos una shell dentro del sistema y para colmo somos root, ah
 y para el de root nos iremos a la carpeta **root**
 
 <p align="center">
-    <img src="/assets/images/lame-writeup-htb/img9.png"width="100%">
+    <img src="/assets/images/lame-writeup-htb/img9.png" width="100%">
 </p>
