@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-/* import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap"; */
+import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
 import {ApplicationComponent} from './application.component';
 import {HomeComponent} from "../home/home.component";
@@ -37,7 +37,7 @@ const routes: Routes = [{ path: '', component: ApplicationComponent }];
 	imports: [
 		RouterModule.forChild(routes),
 		CommonModule,
-		/* NgbTooltipModule */
+		NgbTooltipModule
 	]
 })
 export class ApplicationModule { }
