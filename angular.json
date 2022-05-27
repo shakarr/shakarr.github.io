@@ -30,9 +30,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/animate.min.css",
+              "src/styles.min.css"
             ],
-            "scripts": []
+            "scripts": [
+							"src/assets/data.min.js",
+							"src/assets/js/particles.min.js",
+							"src/assets/js/vanilla-tilt.min.js"
+						]
           },
           "configurations": {
             "production": {
