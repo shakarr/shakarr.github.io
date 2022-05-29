@@ -1,15 +1,36 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+} from '@angular/core';
+import Typed from 'typed.js';
+
+declare var particlesJS: any;
+declare var data: any;
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  public homeData = data['Home'];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private changeDetectorRef: ChangeDetectorRef) {
+    changeDetectorRef.detach();
   }
-
+  ngOnInit(): void {
+    particlesJS.load('particles-js');
+    this.changeDetectorRef.detectChanges();
+  }
+  ngAfterViewInit() {
+    new Typed('#element', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 100,
+      backDelay: 3000,
+      loop: true,
+    });
+  }
 }
